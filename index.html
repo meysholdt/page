@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ona</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Make html/body fill the viewport and remove default margins */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    /* Center contents and ensure we can flex vertically */
+    body {
+      display: flex;
+      justify-content: center; /* horizontal centering */
+      align-items: center;     /* vertical centering */
+      background: #f0f0f0;     /* optional: background color */
+    }
+
+    /* Constrain the image to the viewport */
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* preserve aspect ratio */
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <img src="ona.png" alt="Ona Image">
+</body>
+</html>
